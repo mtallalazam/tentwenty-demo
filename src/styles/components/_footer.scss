@@ -1,0 +1,41 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins" as *;
+
+footer {
+	margin-top: auto;
+	margin-bottom: 3rem;
+	border: 3px dashed colors.$gray;
+	border-left: none;
+	border-right: none;
+	padding: 2.8rem 0;
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 3.6rem;
+	}
+	@include media-breakpoint-up(sm) {
+		nav ul {
+			flex-direction: row;
+		}
+	}
+
+	nav li {
+		padding: 0.5rem 1rem;
+	}
+
+	nav a {
+		color: colors.$dark;
+		text-decoration: none;
+	}
+
+	@include dark() {
+		nav a {
+			color: colors.$light;
+		}
+	}
+}

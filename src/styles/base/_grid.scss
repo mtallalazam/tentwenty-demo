@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/breakpoints" as *;
+
+$columns: 12;
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class^="col-"] {
+	flex-basis: 100%;
+}
+
+@for $i from 1 through $columns {
+	.col-#{$i} {
+		flex: 0 0 calc(100% / calc($columns / $i));
+	}
+}
+
+@each $key, $breakpoint in $breakpoints {
+	@include media-breakpoint-up($key) {
+		@for $i from 1 through $columns {
+			.col-#{$i} {
+				flex: 0 0 calc(100% / calc($columns / $i));
+			}
+		}
+	}
+}

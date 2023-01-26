@@ -1,0 +1,29 @@
+@use "./breakpoints" as *;
+
+@function breakpoint-min($name) {
+	$min: map-get($breakpoints, $name);
+	@return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint-up($name) {
+	$min: breakpoint-min($name);
+	@if $min {
+		@media (min-width: $min) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin dark() {
+	@at-root .dark-mode & {
+		@content;
+	}
+}
+
+@mixin dark-body() {
+	@at-root .dark-mode {
+		@content;
+	}
+}

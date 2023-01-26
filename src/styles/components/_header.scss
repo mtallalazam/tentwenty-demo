@@ -1,0 +1,18 @@
+header {
+	padding: 0.8rem 1rem;
+
+	.top-container {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	.menu-container {
+		position: absolute;
+		left: 0;
+		display: flex;
+		align-items: center;
+	}
+	.logo-container {
+		margin: 0 auto;
+	}
+}

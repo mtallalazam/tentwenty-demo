@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/logo.svg"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Today</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script>
+			(function () {
+				const localStorageThemeKey = "darkMode";
+				function setClass(darkMode) {
+					document.body.classList.add(darkMode ? "dark-mode" : "light-mode");
+					document.body.classList.remove(darkMode ? "light-mode" : "dark-mode");
+				}
+				const currentThemeMode = window.matchMedia("(prefers-colors-scheme: dark)");
+
+				let localStorageTheme = null;
+				try {
+					localStorageTheme = localStorage.getItem(localStorageThemeKey);
+				} catch (err) {}
+
+				const localStorageKeyExists = localStorageTheme !== null;
+				if (localStorageKeyExists) {
+					localStorageTheme = JSON.parse(localStorageTheme);
+				}
+
+				if (localStorageKeyExists) {
+					setClass(localStorageTheme);
+				} else {
+					const isDarkMode = document.body.classList.contains("dark-mode");
+					localStorage.setItem(localStorageThemeKey, JSON.stringify(isDarkMode));
+				}
+			})();
+		</script>
+		<script
+			type="module"
+			src="/src/main.jsx"
+		></script>
+	</body>
 </html>

@@ -1,0 +1,59 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/breakpoints" as *;
+@use "../abstracts/colors";
+
+:root {
+	font-size: 12px;
+	font-family: "Playfair Display", serif;
+	font-family: "Roboto Condensed", sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	font-size: 14px;
+	font-weight: 700;
+	color: colors.$dark;
+	background-color: #fcfcfa;
+	@include dark-body() {
+		background-color: #232323;
+		color: colors.$light;
+	}
+	@include media-breakpoint-up(sm) {
+		font-size: 16px;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	min-width: 320px;
+	max-width: 1440px;
+	margin: 0 auto;
+	min-height: 100vh;
+}
+
+.icon {
+	stroke: colors.$dark;
+	fill: colors.$dark;
+	@include dark() {
+		stroke: colors.$light;
+		fill: colors.$light;
+	}
+}
+
+.hidden {
+	display: none;
+}
+.block {
+	display: block;
+}
+@each $key, $breakpoint in $breakpoints {
+	@include media-breakpoint-up($key) {
+		.hidden {
+			display: none;
+		}
+		.block {
+			display: block;
+		}
+	}
+}

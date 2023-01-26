@@ -1,0 +1,21 @@
+@use "../abstracts/mixins";
+@use "../abstracts/colors";
+
+.button {
+	display: flex;
+	align-items: center;
+	border: none;
+	color: colors.$dark;
+
+	@include mixins.dark {
+		color: colors.$light;
+	}
+
+	.icon {
+		margin-right: 0.5rem;
+	}
+
+	&.no-fill {
+		background-color: transparent;
+	}
+}
