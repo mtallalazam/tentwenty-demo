@@ -13,9 +13,9 @@ body {
 	font-size: 14px;
 	font-weight: 700;
 	color: colors.$dark;
-	background-color: #fcfcfa;
+	background-color: colors.$bg-light;
 	@include dark-body() {
-		background-color: #232323;
+		background-color: colors.$bg-dark;
 		color: colors.$light;
 	}
 	@include media-breakpoint-up(sm) {
