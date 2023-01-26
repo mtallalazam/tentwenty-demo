@@ -1,0 +1,33 @@
+@use "../../../styles/abstracts/mixins" as *;
+@use "../../../styles/abstracts/colors";
+
+.articles-container {
+	margin-bottom: 2rem;
+
+	.banner {
+		width: 100%;
+		text-align: center;
+		padding: 1rem 0;
+		margin-bottom: 3rem;
+		border: 3px dashed colors.$gray;
+		border-left: none;
+		border-right: none;
+
+		h3 {
+			font-size: 3.5rem;
+			font-weight: 900;
+			color: colors.$pink;
+			text-transform: uppercase;
+		}
+	}
+
+	& > section {
+		padding: 0 1rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		& > section {
+			padding: 0;
+		}
+	}
+}

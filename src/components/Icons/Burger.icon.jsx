@@ -1,7 +1,7 @@
-const BurgerIcon = ({ width = 28 }) => {
+const BurgerIcon = ({ width = 28, className = "" }) => {
 	return (
 		<svg
-			className="icon"
+			className={"icon" + " " + className}
 			width={width}
 			height="58"
 			viewBox="0 0 27 58"
@@ -13,21 +13,21 @@ const BurgerIcon = ({ width = 28 }) => {
 				y1="20.8574"
 				x2="23.0289"
 				y2="20.8574"
-				stroke-width="2"
+				strokeWidth="2"
 			/>
 			<line
 				x1="4.5"
 				y1="28"
 				x2="22.9"
 				y2="28"
-				stroke-width="2"
+				strokeWidth="2"
 			/>
 			<line
 				x1="4.62891"
 				y1="35.1426"
 				x2="23.0289"
 				y2="35.1426"
-				stroke-width="2"
+				strokeWidth="2"
 			/>
 		</svg>
 	);

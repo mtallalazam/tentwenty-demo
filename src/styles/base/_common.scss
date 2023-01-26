@@ -49,10 +49,10 @@ body {
 }
 @each $key, $breakpoint in $breakpoints {
 	@include media-breakpoint-up($key) {
-		.hidden {
+		.#{$key}-hidden {
 			display: none;
 		}
-		.block {
+		.#{$key}-block {
 			display: block;
 		}
 	}

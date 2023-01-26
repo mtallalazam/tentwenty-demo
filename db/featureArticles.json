@@ -1,0 +1,58 @@
+[
+	{
+		"id": 0,
+		"title": "Louvre Abu Dhabi marks 4th anniversary with world class exhibitions, programming for all",
+		"catagory": "Travel",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in odio vel risus dignissim interdum. ",
+		"author": "U. R. Oliver",
+		"img": "/article-img-1.jpg"
+	},
+	{
+		"id": 1,
+		"title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in odio vel.",
+		"catagory": "Dine",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": null
+	},
+	{
+		"id": 2,
+		"title": "Phasellus in odio vel risus dignissim interdum. Sed vulputate pretium lobortis.",
+		"catagory": "Dine",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": null
+	},
+	{
+		"id": 3,
+		"title": "Meals on wheels best food trucks in the UAE",
+		"catagory": "Open House",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": "/article-img-2.jpg"
+	},
+	{
+		"id": 4,
+		"title": "UAE: CBSE Term 1 exams begin tomorrow; important guidelines announced",
+		"catagory": "Open House",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": "/article-img-3.jpg"
+	},
+	{
+		"id": 5,
+		"title": "World Expo in Dubai: MP delegation holds discussion over film city and institute",
+		"catagory": "Dine",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": null
+	},
+	{
+		"id": 6,
+		"title": "Meals on wheels best food trucks in the UAE",
+		"catagory": "Open House",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": null
+	}
+]

@@ -1,0 +1,27 @@
+@use "../../../styles/abstracts/mixins" as *;
+
+.feature-articles-container {
+	margin-bottom: 2rem;
+
+	& > section {
+		padding: 0 1rem;
+	}
+
+	@include media-breakpoint-up(lg) {
+		& > section {
+			padding: 0;
+		}
+	}
+}
+
+.masonry {
+	display: column;
+
+	& > * {
+		break-inside: avoid;
+	}
+
+	@include media-breakpoint-up(sm) {
+		columns: 2;
+	}
+}

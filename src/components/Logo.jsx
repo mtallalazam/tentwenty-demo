@@ -1,4 +1,4 @@
-const Logo = ({ size = "lg" }) => {
+const Logo = ({ size = "lg", className }) => {
 	let width = 190;
 
 	switch (size) {
@@ -6,7 +6,7 @@ const Logo = ({ size = "lg" }) => {
 			width = 120;
 			break;
 		case "sm":
-			width = 90;
+			width = 75;
 			break;
 		default:
 			width = 190;
@@ -14,6 +14,7 @@ const Logo = ({ size = "lg" }) => {
 
 	return (
 		<svg
+			className={className}
 			width={width}
 			height="65"
 			viewBox="0 0 190 65"

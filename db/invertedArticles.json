@@ -1,0 +1,29 @@
+[
+	{
+		"id": 0,
+		"title": "Louvre Abu Dhabi marks 4th anniversary with world class exhibitions, programming for all",
+		"catagory": "Travel",
+		"description": "Exhin imlave asfear asfasas afsfeaarsa asfasfasf sasfasfa ten cultable doice inverum",
+		"author": "Cvita Doleschall",
+		"img": "/article-img-8.jpg",
+		"imgPosition": "top"
+	},
+	{
+		"id": 1,
+		"title": "Meals on wheels best food trucks in the UAE",
+		"catagory": "Culture",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": "/article-img-9.jpg",
+		"imgPosition": "bottom"
+	},
+	{
+		"id": 2,
+		"title": "Phasellus in odio vel risus dignissim interdum. Sed vulputate pretium lobortis.",
+		"catagory": "Culture",
+		"description": null,
+		"author": "U. R. Oliver",
+		"img": "/article-img-10.jpg",
+		"imgPosition": "top"
+	}
+]

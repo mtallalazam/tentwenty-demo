@@ -6,16 +6,24 @@
 	align-items: center;
 	border: none;
 	color: colors.$dark;
+	cursor: pointer;
 
 	@include mixins.dark {
 		color: colors.$light;
 	}
 
-	.icon {
+	.icon-left {
 		margin-right: 0.5rem;
+	}
+	.icon-right {
+		margin-left: 0.5rem;
 	}
 
 	&.no-fill {
 		background-color: transparent;
 	}
+}
+
+.icon-button {
+	margin: 0 0.5rem;
 }
