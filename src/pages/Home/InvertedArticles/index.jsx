@@ -13,7 +13,7 @@ const InvertedArticles = () => {
 
 		setTimeout(async () => {
 			try {
-				const response = await fetch("../../../../db/invertedArticles.json");
+				const response = await fetch("../../../db/invertedArticles.json");
 				const data = await response.json();
 
 				setArticlesList(data);

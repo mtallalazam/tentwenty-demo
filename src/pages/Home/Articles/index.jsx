@@ -14,7 +14,7 @@ const Articles = () => {
 
 		setTimeout(async () => {
 			try {
-				const response = await fetch("../../../../db/articles.json");
+				const response = await fetch("../../../db/articles.json");
 				const data = await response.json();
 
 				const featureArticle = data[0];
