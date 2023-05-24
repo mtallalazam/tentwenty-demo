@@ -1,6 +1,6 @@
-# TenTwenty Test Assignment
+# TenTwenty Demo
 
-This is a test assignment project. Demo is available at this link <https://spiffy-starburst-f63360.netlify.app/>
+This is a demo project. Demo is available at this link <https://spiffy-starburst-f63360.netlify.app/>
 
 ## Getting Started
 
